@@ -4,6 +4,7 @@ import siteMetadata from '@/data/siteMetadata'
 import { useState } from 'react'
 import Pagination from '@/components/Pagination'
 import formatDate from '@/lib/utils/formatDate'
+import Image from 'next/image'
 
 export default function ListLayout({ posts, title, initialDisplayPosts = [], pagination }) {
   const [searchValue, setSearchValue] = useState('')
@@ -50,7 +51,7 @@ export default function ListLayout({ posts, title, initialDisplayPosts = [], pag
         <ul>
           {!filteredBlogPosts.length && 'No posts found.'}
           {displayPosts.map((frontMatter) => {
-            const { slug, date, title, summary, tags } = frontMatter
+            const { slug, date, title, summary, tags, images } = frontMatter
             return (
               <li key={slug} className="py-4">
                 <article className="space-y-2 xl:grid xl:grid-cols-4 xl:space-y-0 xl:items-baseline">
@@ -59,6 +60,21 @@ export default function ListLayout({ posts, title, initialDisplayPosts = [], pag
                     <dd className="text-base font-medium leading-6 text-gray-500 dark:text-gray-400">
                       <time dateTime={date}>{formatDate(date)}</time>
                     </dd>
+                    {/* thumbnails */}
+                    {images ? (
+                      <Image
+                        className="rounded object-cover gap-2"
+                        src={`/_next/image?url=${images}&w=640&q=20`}
+                        slug="slug"
+                        title={`${title}`}
+                        alt={`${title}`}
+                        layout="responsive"
+                        placeholder="blur"
+                        blurDataURL={`/_next/image?url=${images}&w=16&q=1`}
+                        width={640}
+                        height={400}
+                      />
+                    ) : null}
                   </dl>
                   <div className="space-y-3 xl:col-span-3">
                     <div>
