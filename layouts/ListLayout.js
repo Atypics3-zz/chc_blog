@@ -63,7 +63,7 @@ export default function ListLayout({ posts, title, initialDisplayPosts = [], pag
                     {/* thumbnails */}
                     {images ? (
                       <Image
-                        className="rounded object-cover gap-2"
+                        className="rounded object-cover gap-2 xl:gap-4"
                         src={`/_next/image?url=${images}&w=640&q=20`}
                         slug="slug"
                         title={`${title}`}
