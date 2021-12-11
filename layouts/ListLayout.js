@@ -60,7 +60,9 @@ export default function ListLayout({ posts, title, initialDisplayPosts = [], pag
                     <dd className="text-base font-medium leading-6 text-gray-500 dark:text-gray-400">
                       <time dateTime={date}>{formatDate(date)}</time>
                     </dd>
-                    {/* thumbnails */}
+                    {/* thumbnails 
+                    credit: https://github.com/aloisdg/tambouille
+                    */}
                     {images ? (
                       <Image
                         className="rounded object-cover gap-2 xl:gap-4"
