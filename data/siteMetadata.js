@@ -2,8 +2,7 @@ const siteMetadata = {
   title: 'CHC Blog',
   author: 'Edwin Huang',
   headerTitle: 'CHCBlog',
-  description:
-    "Welcome to Chabot's Computer Hardware Clubs' Blog (or CHCB)! This is a blog that is meant to display the topics that we have discussed in the club meetings in the past. The aforementioned topics range anywhere from the basics of a specific item to PC building.",
+  description: "Welcome to the blog for Chabot's Computer Hardware Club (or CHCB for short)!",
   language: 'en-us',
   siteUrl: '',
   siteRepo: 'https://github.com/Atypics3/chc_blog',
