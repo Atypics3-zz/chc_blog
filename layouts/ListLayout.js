@@ -66,14 +66,14 @@ export default function ListLayout({ posts, title, initialDisplayPosts = [], pag
                     {images ? (
                       <Image
                         className="rounded object-cover gap-2 xl:gap-4"
-                        src={`/_next/image?url=${images}&w=600&q=20`}
+                        src={`/_next/image?url=${images}&w=640&q=20`}
                         slug="slug"
                         title={`${title}`}
                         alt={`${title}`}
                         layout="responsive"
                         placeholder="blur"
                         blurDataURL={`/_next/image?url=${images}&w=16&q=1`}
-                        width={600}
+                        width={640}
                         height={400}
                       />
                     ) : null}
