@@ -4,13 +4,13 @@ const siteMetadata = {
   headerTitle: 'CHCBlog',
   description: "Welcome to the blog for Chabot's Computer Hardware Club (or CHCB for short)!",
   language: 'en-us',
-  siteUrl: '',
+  siteUrl: 'https://chc-blog.vercel.app/',
   siteRepo: 'https://github.com/Atypics3/chc_blog',
   siteLogo: '/static/images/logo.png',
   image: '/static/images/avatar.png',
   socialBanner: '/static/images/twitter-card.png',
-  email: 'address@yoursite.com',
-  github: 'https://github.com',
+  email: 'edwinhuang@outlook.com',
+  github: 'https://github.com/Atypics3',
   twitter: 'https://twitter.com/Twitter',
   facebook: 'https://facebook.com',
   youtube: 'https://youtube.com',
@@ -36,17 +36,23 @@ const siteMetadata = {
     giscusConfig: {
       // Visit the link below, and follow the steps in the 'configuration' section
       // https://giscus.app/
+
       repo: process.env.NEXT_PUBLIC_GISCUS_REPO,
       repositoryId: process.env.NEXT_PUBLIC_GISCUS_REPOSITORY_ID,
       category: process.env.NEXT_PUBLIC_GISCUS_CATEGORY,
       categoryId: process.env.NEXT_PUBLIC_GISCUS_CATEGORY_ID,
-      mapping: 'url', // supported options: pathname, url, title
+      // repo: 'Atypics3/chc_blog',
+      // repositoryId: 'R_kgDOGe3GFg',
+      // category: 'Announcements',
+      // categoryId: 'DIC_kwDOGe3GFs4CANVo',
+
+      mapping: 'pathname', // supported options: pathname, url, title
       reactions: '1', // Emoji reactions: 1 = enable / 0 = disable
       // Send discussion metadata periodically to the parent window: 1 = enable / 0 = disable
       metadata: '0',
       // theme example: light, dark, dark_dimmed, dark_high_contrast
       // transparent_dark, preferred_color_scheme, custom
-      theme: 'dark',
+      theme: 'light',
       // theme when dark mode
       darkTheme: 'transparent_dark',
       // If the theme option above is set to 'custom`

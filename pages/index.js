@@ -45,7 +45,7 @@ export default function Home({ posts }) {
                       {/* thumbnails */}
                       {images ? (
                         <Image
-                          className="rounded object-cover gap-2 xl:gap-4"
+                          className="rounded object-cover"
                           src={`/_next/image?url=${images}&w=640&q=20`}
                           slug="slug"
                           title={`${title}`}

@@ -11,7 +11,7 @@ const resourcesData = [
     title: 'placeholder 2',
     description: `placeholder text`,
     imgSrc: '/static/images/avatar.jpg',
-    href: '',
+    href: 'https://www.google.com',
   },
 ]
 
