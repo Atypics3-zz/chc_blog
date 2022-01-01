@@ -1,17 +1,15 @@
 const resourcesData = [
   {
-    title: 'A Search Engine',
-    description: `What if you could look up any information in the world? Webpages, images, videos
-    and more. Google has many features to help you find exactly what you're looking
-    for.`,
-    imgSrc: '/static/images/avatar.jpg',
-    href: 'https://www.google.com',
+    title: 'Placeholder',
+    description: `coming soon!`,
+    imgSrc: '/static/images/',
+    href: 'blog/posts/placeholder',
   },
   {
     title: 'placeholder 2',
-    description: `placeholder text`,
-    imgSrc: '/static/images/avatar.jpg',
-    href: 'https://www.google.com',
+    description: `coming soon!`,
+    imgSrc: '/static/images/',
+    href: 'blog/posts/placeholder2',
   },
 ]
 

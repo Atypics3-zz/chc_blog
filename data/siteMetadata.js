@@ -6,17 +6,17 @@ const siteMetadata = {
   language: 'en-us',
   siteUrl: 'https://chc-blog.vercel.app/',
   siteRepo: 'https://github.com/Atypics3/chc_blog',
-  siteLogo: '/static/images/logo.png',
+  siteLogo: '/static/images/newLogo.png',
   image: '/static/images/avatar.png',
-  socialBanner: '/static/images/twitter-card.png',
+  socialBanner: '',
   email: 'edwinhuang@outlook.com',
   github: 'https://github.com/Atypics3',
   twitter: 'https://twitter.com/Twitter',
   facebook: 'https://facebook.com',
   youtube: 'https://youtube.com',
   linkedin: 'https://www.linkedin.com',
-  discord: 'https://www.discord.com',
-  spotify: 'https://www.spotify.com',
+  discord: 'https://www.discord.gg/KBEVUrZmW8',
+  spotify: 'https://open.spotify.com/user/tec78o9y7wpa55jdu66kd8d8k',
   locale: 'en-US',
   analytics: {
     // supports plausible, simpleAnalytics or googleAnalytics
@@ -41,10 +41,6 @@ const siteMetadata = {
       repositoryId: process.env.NEXT_PUBLIC_GISCUS_REPOSITORY_ID,
       category: process.env.NEXT_PUBLIC_GISCUS_CATEGORY,
       categoryId: process.env.NEXT_PUBLIC_GISCUS_CATEGORY_ID,
-      // repo: 'Atypics3/chc_blog',
-      // repositoryId: 'R_kgDOGe3GFg',
-      // category: 'Announcements',
-      // categoryId: 'DIC_kwDOGe3GFs4CANVo',
 
       mapping: 'pathname', // supported options: pathname, url, title
       reactions: '1', // Emoji reactions: 1 = enable / 0 = disable

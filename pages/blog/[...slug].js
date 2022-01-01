@@ -3,6 +3,7 @@ import PageTitle from '@/components/PageTitle'
 import generateRss from '@/lib/generate-rss'
 import { MDXLayoutRenderer } from '@/components/MDXComponents'
 import { formatSlug, getAllFilesFrontMatter, getFileBySlug, getFiles } from '@/lib/mdx'
+import Link from '@/components/Link'
 
 const DEFAULT_LAYOUT = 'PostLayout'
 
@@ -56,11 +57,20 @@ export default function Blog({ post, authorDetails, prev, next }) {
       ) : (
         <div className="mt-24 text-center">
           <PageTitle>
-            Under Construction{' '}
+            Page Under Construction{' '}
             <span role="img" aria-label="roadwork sign">
               🚧
             </span>
           </PageTitle>
+          <br></br>
+          <p>Please come back later!</p>
+
+          <br></br>
+          <Link href="/">
+            <button className="inline px-4 py-2 text-sm font-medium leading-5 text-white transition-colors duration-150 bg-blue-600 border border-transparent rounded-lg shadow focus:outline-none focus:shadow-outline-blue hover:bg-blue-700 dark:hover:bg-blue-500">
+              Back to homepage
+            </button>
+          </Link>
         </div>
       )}
     </>
