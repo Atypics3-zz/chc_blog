@@ -2,7 +2,7 @@
 
 This is a blog that is meant to primarily serve as a blog for Chabot's Computer Hardware Club. It is also a hub for computer hardware resources and other things.
 
-More information is on the [blog](link goes here) itself.
+More information is on the [blog](https://chc-blog.vercel.app/) itself.
 
 Links:
 
